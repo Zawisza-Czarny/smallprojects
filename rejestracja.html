@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>waloidacja</title>
+</head>
+<body>
+<script>
+    function walidacja() {
+        var a = document.getElementById("nick");
+        var b = document.getElementById("email");
+        var c = document.getElementById("gg");
+        var d = document.getElementById("www");
+        var e = document.getElementById("komentarz");
+
+        if (a.value == "") {
+            alert("Wypełnij wszystkie pola");
+            return false;
+
+        }
+        if (b.value == "") {
+            alert("Wypełnij wszystkie pola");
+            return false;
+        }
+        if (c.value == "") {
+            alert("Wypełnij wszystkie pola");
+            return false;
+        }
+        if (d.value == "") {
+            alert("Wypełnij wszystkie pola");
+            return false;
+        }
+        if (e.value == "") {
+            alert("Wypełnij wszystkie pola");
+            return false;
+        }
+        return true;
+
+    }
+</script>
+<form  action="http://www.tomaszx.pl/materialy/test_przesylania.php" method="post" name="formularz" onsubmit="return walidacja()">
+
+    <div>
+
+        Nick:<br />
+
+        <input type="text" id="nick" name="nick" value="" /><br />
+
+
+        Adres e-mail:<br />
+
+        <input type="text" id="email" name="email"  value="" /><br />
+
+
+        Numer gg:<br />
+
+        <input type="text" id="gg" name="gg" value="" /><br />
+
+
+        adress www:<br />
+
+        <input type="text" id="www" name="www" value="" /><br />
+
+
+        Komentarz:<br />
+
+        <textarea type="text" id="komentarz" name="komentarz" value="" cols="22" rows="5" /></textarea><br />
+
+
+        <input type="submit" value="Wyślij" name="submit" />
+
+    </div>
+
+
+</form>
+</body>
+</html>
