@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>waloidacja</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form  action="http://www.tomaszx.pl/materialy/test_przesylania.php" method="post" name="formularz" onsubmit="return walidacja()">
+
+    <div>
+
+        Nick:<br />
+
+        <input type="text" id="nick" name="nick" value=""  required autofocus/><br />
+
+
+        Adres e-mail:<br />
+
+        <input type="text" id="email" name="email"  value="" required/><br />
+
+
+        Numer gg:<br />
+
+        <input type="text" id="gg" name="gg" value="" required/><br />
+
+
+        adres www:<br />
+
+        <input type="text" id="www" name="www" value="" required/><br />
+
+
+        <label for="plec">Podaj swoją płeć:</label> <br />
+        <input type="radio" id="plec" name="plec" value="Kobieta" required>Kobieta
+        <input type="radio" id="plec" name="plec" value="Mężczyzna">Mężczyzna <br />
+
+        <label for="przegladarka">Z jakiej przeglądarki korzystasz:</label> <br />
+        <select id="przegladarka" name="przegladarka">
+            <option value="Chrome">Chrome</option>
+            <option value="Edge">Edge</option>
+            <option value="Firefox">Firefox</option>
+        </select>
+
+        <input type="submit" value="Wyślij" name="submit" />
+
+    </div>
+
+
+</form>
+</body>
+</html>
